@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Konsep CSS FlexBox</title>
+    <link rel="stylesheet" type="text/css" href="../Bootstrap53/css/bootstrap.min.css">
+    <style>
+        .MyFlex {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="border border-3 my-5 mx-auto d-flex" style="width: 550px; height: 330px;">
+    <div class="bg-danger bg-gradient">FLex Item</div>
+    <div class="bg-warning bg-gradient">FLex Item</div>
+    <div class="bg-success bg-gradient">FLex Item</div>
+    <div class="bg-info bg-gradient">FLex Item</div>
+    <div class="bg-primary bg-gradient">FLex Item</div>
+    <div class="bg-dark bg-gradient text-white">FLex Item</div>
+</div>
+
+<!-- Direction -->
+<div class="border border-3 my-5 mx-auto d-flex flex-row-reverse" style="width: 550px; height: 330px;">
+    <div class="bg-danger bg-gradient border">FLex Item</div>
+    <div class="bg-warning bg-gradient border">FLex Item</div>
+    <div class="bg-success bg-gradient border">FLex Item</div>
+    <div class="bg-info bg-gradient border">FLex Item</div>
+    <div class="bg-primary bg-gradient border">FLex Item</div>
+    <div class="bg-dark bg-gradient text-white border">FLex Item</div>
+</div>
+
+<!-- Justify Contents -->
+<div class="border border-3 my-5 mx-auto d-flex justify-content-around" style="width: 550px; height: 330px;">
+    <div class="bg-danger bg-gradient">FLex Item</div>
+    <div class="bg-warning bg-gradient">FLex Item</div>
+    <div class="bg-success bg-gradient">FLex Item</div>
+    <div class="bg-info bg-gradient">FLex Item</div>
+    <div class="bg-primary bg-gradient">FLex Item</div>
+    <div class="bg-dark bg-gradient text-white">FLex Item</div>
+</div>
+
+<!-- Align Items -->
+<div class="border border-3 my-5 mx-auto d-flex align-items-center" style="width: 550px; height: 330px;">
+    <div class="bg-danger bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-warning bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-success bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-info bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-primary bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-dark bg-gradient text-white MyFlex">FLex Item</div>
+</div>
+
+<!-- Align Self -->
+<div class="border border-3 my-5 mx-auto d-flex" style="width: 550px; height: 330px;">
+    <div class="bg-danger bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-warning bg-gradient MyFlex align-self-center">FLex Item</div>
+    <div class="bg-success bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-info bg-gradient MyFlex align-self-center">FLex Item</div>
+    <div class="bg-primary bg-gradient MyFlex">FLex Item</div>
+    <div class="bg-dark bg-gradient text-white MyFlex align-self-center">FLex Item</div>
+</div>
+
+<script type="text/javascript" src="../Bootstrap53/css/bootstrap.bundle.js"></script>
+</body>
+</html>
