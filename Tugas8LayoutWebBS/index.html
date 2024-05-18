@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Bootstrap53/css/bootstrap.min.css">
+	<title>Bootstrap demo</title>
+</head>
+
+<body>
+	<div class="container mt-2">
+		<h1 style="color: teal;">Display</h1>
+		<p>Bagaimana Perilaku dari Display..?</p>
+		<!-- Div & Span -> Pengelompokan -->
+
+		<span></span>
+		<div></div>
+		<!-- 
+		Popular Display : 
+		1. Inline
+		2. Block
+		3. inline-block
+		4. flex
+		5. Grid
+		6 . etc -->
+
+
+		<!-- 1. Inline -->
+
+		<!-- Span Display = Inline -->
+		<!-- a. Inline tidak menambahkan baris ketika ditambahkan elment yang memiliki display inline di dekatnya. (Span) -->
+		<span>Gary</span>
+		<span>Roach</span>
+		<!-- b. lebar dan tingginya sesuai element didalamnya  -->
+		<span class="bg-success text-white">Sanderson Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+		<!-- c. tinggi dan lebar tidak dapat di atur -->
+		<br>
+		<span class="bg-primary bg-gradient text-white" style="width: 500px; height: 100px;">Creative Academy</span>
+		<!-- d. margin & pading hanya mempengaruhi element secara horizontal tidak Vertical -->
+		<span class="bg-success m-5 text-white">Creative Academy</span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+
+		<!-- 2. Block -->
+		<!--Div Display = Block -->
+
+		<!-- a. menambahkan baris baru ketika ditambahkan element HTML yang memiliki display block -->
+		<hr>
+		<div>Gary</div>
+		<div>Roach</div>
+		<!-- b. dapat di atur lebar dan tigginya, tapi jika tidak di atur secara default lebarnya akan memenuhi atau sesuai dengan element pembungkusnya -->
+		<div class="d-inline-block bg-primary bg-gradient text-white" style="width: 500px; height: 100px;">Creative Academy</div>
+		<!-- 3. Inline-Block -->
+		<hr>
+		<div class="d-inline-block bg-success text-white">inline block</div>
+		<div class="d-inline-block bg-primary bg-gradient text-white" style="width: 500px; height: 100px;">Creative Academy</div>
+		<!-- Display Inline-Block -->
+		<!-- a. Berperilaku seperti inline & Block -->
+
+		<!-- Merubah Display di bootstarp 5 -->
+		<div class="d-inline">Gary</div>
+		<div class="d-inline">Roach</div>
+		<span class="d-block">Gary</span>
+		<span class="d-block">Roach</span>
+
+
+		<div class="border mb-3 mt-4"></div>
+		<h1 style="color: teal;">Float</h1>
+		<p>Bagaimana Perilaku dari Float..?</p>
+
+		<!-- 4. Float -->
+		<!-- 1. Mangatur Posisi pada sebuah element. -->
+		<!-- 2. dipaksa berada di sebelah kanan atau kiri pada element pembungkusnya atau istilahnya mengambang. -->
+		<!-- 3. prilakunya berbeda dengan alignment. -->
+		<!-- 4. Clear fix -> membersihkan float -> collaps -->
+		<div style="width: 500px; height: 100px;" class="bg-success clearfix">
+			<div style="width: 100px; height: 100px;" class="bg-danger bg-gradient float-end">Element 1</div>
+			<div style="width: 100px; height: 100px;" class="bg-info bg-gradient float-end">Element 2</div>
+			<div style="width: 100px; height: 100px;" class="bg-success bg-gradient float-end">Element 3</div>
+		</div>
+
+
+		<br>
+		<div class="border mb-3 mt-4"></div>
+		<h1 style="color: teal;">Position</h1>
+		<p>Bagaimana Perilaku dari Position..?</p>
+		<!-- 5. Position -->
+
+		<!-- a. Static -->
+		<!-- b. Retalive -->
+		<!-- c. Absolute -->
+		<!-- d. Fixed -->
+		<div style="width: 500px; height: 500px;" class="bg-danger clearfix">
+			<div style="width: 100px; height: 100px;" class="bg-primary bg-gradient">Element 1</div>
+			<div style="width: 100px; height: 100px;" class="bg-info bg-gradient">Element 2</div>
+			<div style="width: 100px; height: 100px;" class="bg-success bg-gradient position-fixed top-50">Element 3</div>
+		</div>
+
+    </div>
+
+    <script type="text/javascript" src="../Bootstrap53/css/bootstrap.min.js"></script>
+</body>
+</html>
